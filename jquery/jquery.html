@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<center>
+    <button id="btn">clic me</button>
+    <div id="box" style="width: 300px; height: 300px; border: 1px solid blueviolet; background-color: blueviolet; display: none;"></div>
+    <input type="text" id="inp">
+    <label for="inp" id="err" style="color: red; display: none;">enter minmum 4 char</label>
+    <input type="text">
+</center>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#btn").mouseenter(function(){
+                    $(this).css({"background":"green"})
+                })
+
+                $("#btn").mouseleave(function(){
+                    $(this).css({"background":"red"})
+                })
+
+
+                $('#btn').click(function(){
+                    $("#box").toggle(3000)
+                })
+
+
+                $("#inp").blur(function(){
+                    var txt=$(this).val();
+
+                    if(txt.length <4){
+                        $("#err").show()
+                    }else{
+                        $('#err').hide()
+                    }
+                })
+
+
+            })
+        </script>
+</body>
+
+</html>

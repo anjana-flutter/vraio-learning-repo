@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcu.css">
+    <script src="calcu.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="mai-div">
+
+        <div class="input">
+            <input type="text" class="inp" id="screen" disabled>
+        </div>
+        <div class="row">
+            <button onclick="ac()" class="btn-wyt">AC</button>
+            <button class="btn-wyt">+/-</button>
+            <button onclick="clickbtn('%')" class="btn-wyt">%</button>
+            <button onclick="clickbtn('/')" class="btn-org">/</button>
+
+        </div>
+        <div class="row">
+            <button onclick="clickbtn(7)" class="btn-black">7</button>
+            <button onclick="clickbtn(8)" class="btn-black">8</button>
+            <button onclick="clickbtn(9)" class="btn-black">9</button>
+            <button onclick="clickbtn('*')" class="btn-org">X</button>
+        </div>
+        <div class="row">
+            <button onclick="clickbtn(4)" class="btn-black">4</button>
+            <button onclick="clickbtn(7)" class="btn-black">5</button>
+            <button onclick="clickbtn(6)" class="btn-black">6</button>
+            <button onclick="clickbtn('-')" class="btn-org">-</button>
+        </div>
+        <div class="row">
+            <button onclick="clickbtn(1)" class="btn-black">1</button>
+            <button onclick="clickbtn(2)" class="btn-black">2</button>
+            <button onclick="clickbtn(3)" class="btn-black">3</button>
+            <button onclick="clickbtn('+')" class="btn-org">+</button>
+        </div>
+        <div class="row">
+            <button onclick="clickbtn(0)" class="btn-blackZero">0</button>
+            <button onclick="clickbtn('.')" class="btn-black">.</button>
+            <button onclick="equalto()" class="btn-org">=</button>
+        </div>
+
+
+</body>
+
+</html>
